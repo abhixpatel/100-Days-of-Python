@@ -1,4 +1,5 @@
 '''
+EXERCISE 1:
 You are going to write a program that calculates the average student height from a List of heights.
 
 e.g. student_heights = [180, 124, 165, 173, 189, 169, 146]
@@ -14,10 +15,9 @@ for n in range(0, len(student_heights)):
 
 
 # Write your code below this row 👇
-
-total_height = 0
-
-for height in student_heights:
-    total_height += height
-
-print(f"Average height of students is {round(total_height/len(student_heights))}")
+summ = 0
+t_num = len(student_heights)
+for n in range(0, t_num):
+    summ += int(student_heights[n])
+avg_height = round(summ/t_num, 2)
+print(f"avg height is {avg_height}")
